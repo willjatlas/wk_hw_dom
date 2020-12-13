@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
+    <title>Personal Recipe App</title>
+</head>
+<body>
+    <h1>Enter Your Favourite Recipe Links:</h1>
+
+    <div id="form-container">
+        <form id="sub-form" action="submit">
+            <div class="form-item-container">
+                <label class="form-labels" for="recipe_name">Recipe Name: </label>
+                <input type="text" id="recipe_name" required>
+            </div>
+            <div class="form-item-container">
+                <label class="form-labels" for="duration">Duration: </label>
+                <input type="time" id="duration" required>
+            </div>
+            <div id="radio-container">
+                <label for="form-labels" for= "difficulty">Difficulty: </label>
+                <div class="form-item-container">
+                    <input type="radio" id="easy" name="difficulty" value="Easy" checked>
+                    <label for="easy">Easy</label>
+                </div>
+                <div class="form-item-container">
+                    <input type="radio" id="normal" name="difficulty" value="Normal" checked>
+                    <label for="normal">Normal</label>
+                </div>
+                <div class="form-item-container">
+                    <input type="radio" id="hard" name="difficulty" value="Hard" checked>
+                    <label for="hard">Hard</label>
+                </div>
+            </div>
+            <div class="form-item-container">
+                <label class="form-labels" for="link">Website Link: </label>
+                <br>
+                <textarea name="link" id="link" cols="30" rows="5">http//....</textarea>
+            </div>
+            <button id="sub-button" type="submit">Add Recipe</button>
+        </form>
+    </div>
+    <div id="display-container">
+        <h2> Your Saved Recipes: </h2>
+        <ul id="saved-recipes"></ul>
+    </div>
+</body>
+</html>

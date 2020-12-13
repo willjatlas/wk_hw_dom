@@ -1,0 +1,48 @@
+body{
+    background-color: indigo;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#form-container{
+    border-radius: 10px;
+    background-color: lightcoral;
+    width:95%;
+}
+
+
+#sub-form{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.form-item-container{
+    background-color: indigo;
+    margin: 3px;
+    padding:3px;
+    flex-basis: 20%;
+    border-color: snow;
+    border-style: ridge;
+    border-width: 2px;
+}
+
+#radio-container{
+    background-color: indigo;
+    margin: 3px;
+    padding: 3px;
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    border-color: snow;
+    border-style: ridge;
+    border-width: 2px;
+}
+
+#saved-recipies{
+    display: flex;
+}
+
+#sub-button{
+    border-radius: 3px;
+}
